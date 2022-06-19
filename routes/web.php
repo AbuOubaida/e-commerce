@@ -25,6 +25,6 @@ Route::get('/dashboard', function () {
 require __DIR__.'/auth.php';
 
 //Admin Login Route without admin group
-Route::get('admin/dashboard',[AdminController::class,'login']);
+Route::get('admin/login',[AdminController::class,'login']);
 //Admin dashboard Route without admin group
 Route::get('admin/dashboard',[AdminController::class,'dashboard']);
